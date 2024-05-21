@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-color: #fcfbf4;
+    background-size: cover;
+    background-position: center; 
+}
+
+.nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex:1;
+    text-align: center;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 30px 80px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    text-decoration: none;
+    color: #ODOD55;
+    text-transform: none;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-links ul li::after{
+    
+    content: '';
+    height: 2px;
+    width: 0%;
+    background: #D9F103;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.radio-container,
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.radio-container input,
+.checkbox-container input {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.radio-container label,
+.checkbox-container label {
+    vertical-align: middle;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0D0D55;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #D9F103;
+    color: black;
+} 
+
+@media screen and (max-width: 768px) {
+    .nav-links ul li {
+        padding: 20px 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nav-links ul li {
+        padding: 15px 20px;
+    }
+
+    .form {
+        padding: 10px;
+    }
+}
+

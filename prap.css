@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(Lola_Akerstrom_Parga_92-1615171732.jpg);
+    background-size: cover;
+    background-position: center; 
+}
+
+.nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex:1;
+    text-align: center;
+}
+.nav-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 30px 80px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: none;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-links ul li::after{
+    content: '';
+    height: 2px;
+    width: 0%;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.test-box{
+    
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+.test-box h1{
+    
+    color: white;
+    font-size: 2.5rem;
+    margin-top: 60px;
+}
+
+.test-box h2 {
+    color: white;
+    font-size: 1.0rem;
+    padding: 10px;
+    font-weight: bold;
+    line-height: 25px;
+}
+.test-box p{
+    text-align: center;
+    color: white;
+    font-size: 0.9rem;
+    margin: 20px auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    max-width: 550px;
+    line-height: 1.5;
+    
+}
+
+.button {
+    
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #658db8;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 29px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links ul li {
+        padding: 20px 40px;
+    }
+
+    .test-box h1 {
+        font-size: 2rem;
+    }
+
+    .test-box h2 {
+        font-size: 0.9rem;
+    }
+
+    .test-box p {
+        font-size: 0.8rem;
+        max-width: 400px;
+    }
+
+    .button {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nav {
+        flex-direction: column;
+        padding: 5% 6%;
+    }
+
+    .nav-links ul li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .test-box h1 {
+        font-size: 1.5rem;
+        margin-top: 40px;
+    }
+
+    .test-box h2 {
+        font-size: 0.8rem;
+    }
+
+    .test-box p {
+        font-size: 0.7rem;
+        max-width: 300px;
+    }
+
+    .button {
+        font-size: 11px;
+        padding: 6px 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

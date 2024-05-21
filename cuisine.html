@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food time in the balkans</title>
+    <link rel="stylesheet" href="cuisine.css">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="destinations.html">DESTINATIONS</a></li>
+                <li><a href="adventures.html">ADVENTURES</a></li>
+                <li><a href="cuisine.html">CUISINE</a></li>
+                <li><a href="videos.html">VIDEOS</a></li>
+                <li><a href="form.html">FORM</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <div class="thumbnails">
+        <a href="balkan-food-cevapcici-4096672996.jpg"><div class="thumbnail" style="background-image: url('balkan-food-cevapcici-4096672996.jpg');"></div></a>
+        <a href="th2.jpg"><div class="thumbnail" style="background-image: url('th2.jpg');"></div></a>
+    </div>
+
+    <div id="largerImageContainer" onclick="hideLargerImage()">
+        <img id="largerImage" src="" alt="Larger Image">
+    </div>
+
+    <div class="gallery">
+        <div class="row">
+            <div class="image">
+                <img src="fli.jpg" alt="traditional food">
+            </div>
+            <div class="image">
+                <img src="balkan-food-cevapcici-4096672996.jpg" alt="Balkan food">
+            </div>
+            <div class="image">
+                <img src="pite.jpeg" alt="Balkan food">
+            </div>
+        </div>
+        <div class="row">
+            <div class="image">
+                <img src="bakllav.jpg" alt="Famous dessert">
+            </div>
+            <div class="image">
+                <img src="bombica.jpg" alt="Famous dessert">
+            </div>
+            <div class="image">
+                <img src="Trilece_Balkan-dessert_Depositphotos_119454772_l-2015-3127947218.jpg" alt="Famous dessert">
+            </div>
+        </div>
+    </div>
+    
+   <div class="print-content">
+    <div class="restaurants">
+        <h2>RESTAURANTS TO TRY</h2>
+        <table>
+            <caption>Table</caption>
+            <tr>
+                <th>Name</th>
+                <th>Location</th>
+                <th>Rate</th>
+                <th>Website</th>
+            </tr>
+            <tr>
+                <td>MRIZI I ZANAVE</td>
+                <td>Lezhe</td>
+                <td>4.7</td>
+                <td><a href="https://www.mrizizanave.com" target="_blank">Visit Website</a></td>
+            </tr>
+            <tr>
+                <td>PELEGRINI</td>
+                <td>Sibenik</td>
+                <td>4.7</td>
+                <td><a href="https://www.pelegrini.hr" target="_blank">Visit Website</a></td>
+            </tr>
+            <tr>
+                <td>DIVINO</td>
+                <td>Tivat</td>
+                <td>4.5</td>
+                <td><a href="https://www.divinorestaurant.me" target="_blank">Visit Website</a></td>
+            </tr>
+            <tr>
+                <td>DVERI</td>
+                <td>Sarajevo</td>
+                <td>4.7</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>OLD HOUSE</td>
+                <td>Skopje</td>
+                <td>4.5</td>
+                <td></td>
+            </tr>
+    
+    </table>
+    </div>
+</div>
+
+<script>
+    function showLargerImage(imageUrl) {
+        document.getElementById('largerImage').src = imageUrl;
+        document.getElementById('largerImageContainer').style.display = 'flex';
+    }
+    
+    function hideLargerImage() {
+        document.getElementById('largerImageContainer').style.display = 'none';
+    }
+</script>
+</body>
+</html>
